@@ -12,16 +12,17 @@
 	<script src="js/scripts.js" type="text/javascript"></script>
 	<script src="js/parallax.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/headhesive.min.js"type="text/javascript"></script>
 </head>
 <body>
 	<div class="parallax-window" data-parallax="scroll">
 		<div class="main_section parallax-window" data-parallax="scroll" data-image-src="img/11.png">
 		<div class="section">
 		<div class="container">
-			<header class="large">
+			<header class="header">
 			<div class="row" id='menu'>
 				<nav class="navbar navbar-expand-md" >
-					<img class="col-md-5" src="img/9.png" alt="Лого">
+					<img class="col-md-5 logotype" src="img/9.png" alt="Лого">
 					<ul class="list-inline nav_block col-md-7">
 						<li class="list-inline-item nav_item"><a href="#">Главная</a></li>
 						<li class="list-inline-item nav_item"><a href="#comps">Услуги</a></li>
@@ -30,6 +31,8 @@
 				</nav>
 			</div>
 			</header>
+		</div>
+		<div class="container">
 			<div class="row  col-md-8 offset-md-2 text-center text-uppercase">
 				<h1 class="main_header">Соберём компьютер <br>
 					Быстро,  дёшево <br>
@@ -41,7 +44,7 @@
 					<button class="text-center main_button" data-toggle="modal" data-target="#mainModal">Заказать сборку</button>
 				</div>
 			</div>
-			</div>
+		</div>
 		</div>
 	</div>
 	<!----------   Main modal   ------------>
@@ -49,17 +52,17 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModaltitle"></h5>
+				<h5 class="modal-title" id="exampleModaltitle">Упс...</h5>
 				<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-        		<p>Modal body text goes here.</p>
+        		<p>Модальное окно ещё в доработке</p>
       		</div>
       		<div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+		        <button type="button" class="btn btn-primary">Заказать</button>
       		</div>
 		</div>
 	</div>
