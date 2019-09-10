@@ -8,7 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/ui.totop.css" />
-	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
 	<script src="js/scripts.js" type="text/javascript"></script>
 	<script src="js/parallax.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -17,13 +20,16 @@
 <body>
 	<div class="parallax-window" data-parallax="scroll">
 		<div class="main_section parallax-window" data-parallax="scroll" data-image-src="img/11.png">
-		<div class="section">
-		<div class="container">
+		<div class="section main_section">
+		<div class="container cont">
 			<header class="header">
 			<div class="row" id='menu'>
 				<nav class="navbar navbar-expand-md" >
 					<img class="col-md-5 logotype" src="img/9.png" alt="Лого">
-					<ul class="list-inline nav_block col-md-7">
+					<a href="#" class="menu-btn">
+    					<span></span>
+  					</a>
+					<ul class="list-inline nav_block col-md-7 ">
 						<li class="list-inline-item nav_item"><a href="#">Главная</a></li>
 						<li class="list-inline-item nav_item"><a href="#comps">Услуги</a></li>
 						<li class="list-inline-item nav_item"><a href="#about_us">О нас</a></li>
@@ -33,14 +39,14 @@
 			</header>
 		</div>
 		<div class="container">
-			<div class="row  col-md-8 offset-md-2 text-center text-uppercase">
+			<div class="row  col-md-8 offset-md-2 col-10 offset-1 text-center text-uppercase">
 				<h1 class="main_header">Соберём компьютер <br>
 					Быстро,  дёшево <br>
 					и по вашему <br>
 					желанию</h1>
 			</div>
 			<div class="row">
-				<div class="col-md-5 offset-md-4">
+				<div class="col-md-5 offset-md-4" align="center">
 					<button class="text-center main_button" data-toggle="modal" data-target="#mainModal">Заказать сборку</button>
 				</div>
 			</div>
@@ -74,9 +80,9 @@
 				<h1 class="header_computer"> Наши сборки</h1>
 			</div>
 			<div class="row pictures">
-				<div class="col-md-4"><img src="img/7.png" class="pic" alt="Первый компьютер"></div >
-				<div class="col-md-4"><img src="img/8.png" class="pic" alt="Второй компьютер"></div >
-				<div class="col-md-4"><img src="img/10.png" class="pic" alt="Третий компьютер"></div >
+				<div class="col-md-4 col-12"><img src="img/7.png" class="pic" alt="Первый компьютер"></div >
+				<div class="col-md-4 col-12"><img src="img/8.png" class="pic" alt="Второй компьютер"></div >
+				<div class="col-md-4 col-12"><img src="img/10.png" class="pic" alt="Третий компьютер"></div >
 			</div>
 		</div>
 	</div>
