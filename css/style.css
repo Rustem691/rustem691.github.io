@@ -50,9 +50,8 @@ button:focus{
 	border: 2px solid #ffffff;
 	border-radius: 30px;
 	height: 85px;
-	width: :360px;
+	margin-left: 80px;
 	align-content: center;
-	margin-left: 10px;
 	margin-top: 55px;
 	padding: 1px 30px 1px 30px;
 }
