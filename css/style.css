@@ -1,4 +1,6 @@
-
+html,body{
+	overflow-x: hidden;
+}
 body{
 	background-color: #F5F8FA;
 
@@ -15,7 +17,7 @@ body{
 .nav_block a{
 	font-size: 35px;
 	color:#fff;
-	margin-left: 50px
+	margin-left: 50px;
 }
 .nav_block a:hover{
 	text-decoration: none;
@@ -29,9 +31,6 @@ header.small{
 	background-color: #ffffff;
 	color: #000;
 	height: 50px;
-}
-.main_section{
-	height: 1077px
 }
 .main_header{
 	font-size: 60px;
@@ -62,7 +61,7 @@ button:focus{
 	background-color: #fff;
 	opacity: 0.5;
 	border-color: #000000;
-	color: #000
+	color: #000;
 }
 
 .section_with_pictures{
@@ -90,19 +89,18 @@ button:focus{
 	margin-top: 20px;
 }
 .pic{
-
 	border-radius: 2px;
 }
 
 .header_about_us{
 	font-size: 80px;
-	margin-bottom: 100px
+	margin-bottom: 100px;
 }
 .div_about_us{
 	border: 1px solid #D3E0E9;
 	background-color: #fff;
 	height: 350px;
-	padding-top: 20px
+	padding-top: 20px;
 	
 }
 .div_about_us h3{
@@ -126,4 +124,269 @@ p{
 .parallax-window {
     min-height: 1080px;
     background: transparent;
+
+}
+/*---------- Адаптация ---------------*/
+@media(min-width: 0px) and (max-width:320px){
+	.logotype{
+		width: 200px;
+		height: auto;
+	}
+	.nav_block{
+		display: none;
+	}
+	.nav_block li{
+		display: block;
+		width: 100%;
+		font-size: 12px;
+		padding: 8px;
+	}
+	.menu-btn {
+ 		display: block;
+ 		width: 50px;
+ 		height: 50px;
+ 		background-color: #fff;
+ 		border-radius: 50%;
+ 		position: relative;
+	}
+	.menu-btn span,
+	.menu-btn span::before,
+	.menu-btn span::after {
+ 		position: absolute;
+ 		top: 50%; margin-top: -1px;
+ 		left: 50%; margin-left: -10px;
+ 		width: 20px;
+ 		height: 2px;
+ 		background-color: #222;
+	}
+	.menu-btn span::before,
+	.menu-btn span::after {
+ 		content: '';
+ 		display: block;
+ 		transition: 0.2s;
+	}
+	.menu-btn span::before {
+ 		transform: translateY(-5px);
+	}
+	.menu-btn span::after {
+ 		transform: translateY(5px);
+	}
+
+	.menu-btn_active span:before {
+ 		transform: rotate(-90deg);
+	}
+	.menu-btn_active span:after {
+ 		transform: rotate(4deg);
+	}
+	.menu-btn_active span{
+		transform: rotate(45deg);
+	}
+	.main_header{
+		font-size: 27px;
+		margin: 40px 0px 0px 0px;
+		line-height: 1;
+	}
+	.main_button{
+		width: 200px;
+		height: auto;
+		font-size: 30px;
+		margin: 40px 0px 0px 0px;
+		padding: 0;
+		line-height: 1.1;
+	}
+	.main_section{
+		min-height: 600px;
+	}
+	.section_with_pictures{
+		margin-top: 100px;
+		height: 1200px;
+	}
+	.header_computer{
+		font-size: 40px;
+	}
+	.pic{
+		width: 265px;
+		height: auto;
+		margin-top: 30px;
+	}
+	.section_about_us{
+		margin-top: 70px;
+	}
+	.header_about_us{
+		font-size: 50px;
+		margin-bottom: 50px;
+	}
+	.div_about_us{
+		margin-top: 30px;
+		padding-top: 0;
+	}
+	.header_responsibility{
+		margin-bottom: 10px;
+	}
+	.footer{
+		margin-top: 20px;
+		height: 150px;
+	}
+	#toTop{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.nav_block_active{
+		display: block;
+		background-color: #3E3E3E;
+		width:100%;
+		float: right;
+		margin: 0;
+		padding-right:20px;
+		height: 150px;
+	}
+	.nav_item a{
+		font-size: 30px;
+		float: right;
+		border-bottom:  1px solid #979797;
+		text-transform: uppercase;	
+	}
+	.cont{
+		padding: 0;
+	}
+}
+@media(min-width: 321px) and (max-width:480px){
+	.logotype{
+		width: 240px;
+		height: auto;
+	}
+	.nav_block{
+		display: none;
+	}
+	.nav_block li{
+		display: block;
+		width: 100%;
+		font-size: 12px;
+		
+	}
+	.menu-btn {
+ 		display: block;
+ 		width: 50px;
+ 		height: 50px;
+ 		background-color: #fff;
+ 		border-radius: 50%;
+ 		position: relative;
+ 		margin-right: 10px;
+	}
+	.navbar{
+		width: 100%;
+	}
+	.menu-btn span,
+	.menu-btn span::before,
+	.menu-btn span::after {
+ 		position: absolute;
+ 		top: 50%; margin-top: -1px;
+ 		left: 50%; margin-left: -10px;
+ 		width: 20px;
+ 		height: 2px;
+ 		background-color: #222;
+	}
+	.menu-btn span::before,
+	.menu-btn span::after {
+ 		content: '';
+ 		display: block;
+ 		transition: 0.2s;
+	}
+	.menu-btn span::before {
+ 		transform: translateY(-5px);
+	}
+	.menu-btn span::after {
+ 		transform: translateY(5px);
+	}
+
+	.menu-btn_active span:before {
+ 		transform: rotate(-90deg);
+	}
+	.menu-btn_active span:after {
+ 		transform: rotate(4deg);
+	}
+	.menu-btn_active span{
+		transform: rotate(45deg);
+	}
+	.main_header{
+		font-size: 40px;
+		margin: 40px 0px 0px 0px;
+		line-height: 1;
+	}
+	.main_button{
+		width: 70%;
+		padding: 10px;
+		height: auto;
+		font-size: 30px;
+		margin: 40px 0px 0px 10px;
+		line-height: 1.1;
+	}
+	.main_section{
+		min-height: 750px;
+	}
+	.section_with_pictures{
+		margin-top: 100px;
+		height: 100%;
+		padding-bottom: 40px;
+	}
+	.header_computer{
+		font-size: 45px;
+	}
+	.pic{
+		width: 98%;
+		height: auto;
+		margin-top: 30px;
+	}
+	.section_about_us{
+		margin-top: 70px;
+	}
+	.header_about_us{
+		font-size: 50px;
+		margin-bottom: 50px;
+	}
+	.div_about_us{
+		margin-top: 30px;
+		padding-top: 0;
+	}
+	.header_responsibility{
+		margin-bottom: 10px;
+	}
+	.footer{
+		margin-top: 20px;
+		height: 150px;
+	}
+	#toTop{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.nav_block_active{
+		display: block;
+		background-color: #3E3E3E;
+		width:100%;
+		float: right;
+		margin: 0;
+		padding-right:20px;
+		height: 200px;
+	}
+	.nav_item{
+		padding: 30px;
+	}
+	.nav_item a{
+		font-size: 30px;
+		float: right;
+		border-bottom:  1px solid #979797;
+		text-transform: uppercase;	
+	}
+	.cont{
+		padding: 0;
+	}
+}
+@media(min-width: 481px) and (max-width:768px){
+	
+}
+@media(min-width: 769px) and (max-width: 992px){
+	
+}
+@media(min-width: 993px) and (max-width: 1200px){
+	
 }
