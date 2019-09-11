@@ -26,6 +26,7 @@ body{
 header{  
 	border-bottom: 1px solid #aaaaaa;  
 	z-index: 10; 
+	padding-bottom: 20px;
 }
 header.small{
 	background-color: #ffffff;
@@ -71,7 +72,7 @@ button:focus{
 .footer{
 	background-color: #222222;
 	color: #707E84;
-	height: 300px;
+	height: 200px;
 	margin-top:300px;
 	font-size: 36px;
 }
@@ -128,8 +129,13 @@ p{
 /*---------- Адаптация ---------------*/
 @media(min-width: 0px) and (max-width:320px){
 	.logotype{
+		margin-left: 30px;
 		width: 200px;
 		height: auto;
+	}
+	#menu{
+		display: flex;
+		flex-flow:row wrap;
 	}
 	.nav_block{
 		display: none;
@@ -147,6 +153,8 @@ p{
  		background-color: #fff;
  		border-radius: 50%;
  		position: relative;
+ 		margin-left: auto;
+ 		margin-right: 20px;
 	}
 	.menu-btn span,
 	.menu-btn span::before,
@@ -253,6 +261,11 @@ p{
 	.logotype{
 		width: 240px;
 		height: auto;
+		margin-left: 30px;
+	}
+	#menu{
+		display: flex;
+		flex-flow: row wrap;
 	}
 	.nav_block{
 		display: none;
@@ -265,12 +278,15 @@ p{
 	}
 	.menu-btn {
  		display: block;
+
  		width: 50px;
  		height: 50px;
  		background-color: #fff;
  		border-radius: 50%;
  		position: relative;
- 		margin-right: 10px;
+ 		margin-left: auto;
+ 		margin-right: 30px;
+		
 	}
 	.navbar{
 		width: 100%;
@@ -384,9 +400,14 @@ p{
 	.logotype{
 		width: 240px;
 		height: auto;
+		margin-left: 20px;
 	}
 	.nav_block{
 		display: none;
+	}
+	#menu{
+		display: flex;
+		flex-flow: row wrap;
 	}
 	.nav_block li{
 		display: block;
@@ -401,7 +422,8 @@ p{
  		background-color: #fff;
  		border-radius: 50%;
  		position: relative;
- 		margin-right: 10px;
+ 		margin-left: auto;
+ 		margin-right: 30px;
 	}
 	.navbar{
 		width: 100%;
@@ -492,11 +514,13 @@ p{
 	.nav_block_active{
 		display: block;
 		background-color: #3E3E3E;
+		border-radius: 10px;
 		width:100%;
 		float: right;
 		margin: 0;
 		padding-right:20px;
 		height: 200px;
+		margin-top: 20px;
 	}
 	.nav_item{
 		padding: 30px;
@@ -512,27 +536,39 @@ p{
 	}
 }
 @media(min-width: 769px) and (max-width: 992px){
+	.container{
+		padding: 0;
+	}
 	.logotype{
-		width: 240px;
-		height: auto;
+		width: 450px;
+		margin-left:px;
 	}
 	.nav_block{
 		display: none;
 	}
+	#menu {
+		display: flex;
+		flex-flow: row wrap;
+	}
 	.nav_block li{
 		display: block;
-		width: 100%;
-		font-size: 12px;
-		
+		width: 200px;
+		font-size: 40px;
+		border-bottom:  1px solid #979797;
+		text-transform: uppercase;
+		float: right;
+		margin-top: 5px;
+		padding-bottom: 10px;
 	}
 	.menu-btn {
  		display: block;
- 		width: 50px;
- 		height: 50px;
+ 		width: 75px;
+ 		height: 75px;
  		background-color: #fff;
  		border-radius: 50%;
  		position: relative;
- 		margin-right: 10px;
+ 		margin-left: auto;
+ 		margin-right: px;
 	}
 	.navbar{
 		width: 100%;
@@ -570,20 +606,20 @@ p{
 		transform: rotate(45deg);
 	}
 	.main_header{
-		font-size: 40px;
+		font-size: 55px;
 		margin: 40px 0px 0px 0px;
 		line-height: 1;
 	}
 	.main_button{
-		width: 70%;
+		width: 100%;
 		padding: 10px;
 		height: auto;
-		font-size: 30px;
-		margin: 40px 0px 0px 10px;
+		font-size: 40px;
+		margin: 40px 0px 0px 25px;
 		line-height: 1.1;
 	}
 	.main_section{
-		min-height: 750px;
+		min-height: 1000px;
 	}
 	.section_with_pictures{
 		margin-top: 100px;
@@ -591,10 +627,10 @@ p{
 		padding-bottom: 40px;
 	}
 	.header_computer{
-		font-size: 45px;
+		font-size: 80px;
 	}
 	.pic{
-		width: 98%;
+		width: 100%;
 		height: auto;
 		margin-top: 30px;
 	}
@@ -623,24 +659,16 @@ p{
 	.nav_block_active{
 		display: block;
 		background-color: #3E3E3E;
-		width:100%;
-		float: right;
-		margin: 0;
-		padding-right:20px;
-		height: 200px;
+		border-radius: 10px;
+		margin-left: auto;
+		padding-bottom: 15px;
+		margin-bottom: 0;
 	}
 	.nav_item{
-		padding: 30px;
 	}
 	.nav_item a{
-		font-size: 30px;
-		float: right;
-		border-bottom:  1px solid #979797;
-		text-transform: uppercase;	
 	}
-	.cont{
-		padding: 0;
-	}
+
 }
 @media(min-width: 993px) and (max-width: 1200px){
 	
